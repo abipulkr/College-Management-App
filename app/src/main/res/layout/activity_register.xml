@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_animation"
+    android:id="@+id/myLayout">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/id1"
+        android:ems="10"
+        android:hint="@string/name1"
+        android:inputType="textPersonName"
+        android:paddingEnd="10sp"
+        android:paddingStart="5sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/h_guideline1"
+        android:drawableLeft="@drawable/id1"
+        android:paddingRight="10sp"
+        android:paddingLeft="5sp" />
+
+    <EditText
+        android:id="@+id/et_regno"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/id1"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="text"
+        android:paddingEnd="10sp"
+        android:paddingStart="5sp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        android:drawableLeft="@drawable/id1"
+        android:paddingRight="10sp"
+        android:paddingLeft="5sp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawableStart="@android:drawable/sym_action_email"
+        android:drawableTint="@android:color/black"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="10sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:paddingStart="5sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constrainedHeight="false"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/et_regno"
+        tools:targetApi="m" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/pass"
+        android:drawableStart="@drawable/pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingEnd="10sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:paddingStart="5sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <cyd.awesome.material.AwesomeText
+        android:id="@+id/pwd_show_hide"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        app:awesome_font="material_design"
+        app:awesome_icon="MD_VISIBILITY_OFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et_pass"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/et_pass"
+        app:layout_constraintTop_toTopOf="@+id/et_pass"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <EditText
+        android:id="@+id/et_cnf_pass"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/pass"
+        android:drawableStart="@drawable/pass"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingEnd="10sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:paddingStart="5sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+    <cyd.awesome.material.AwesomeText
+        android:id="@+id/pwd_show_hide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        app:awesome_font="material_design"
+        app:awesome_icon="MD_VISIBILITY_OFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cnf_pass"
+        app:layout_constraintEnd_toEndOf="@+id/et_cnf_pass"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/et_cnf_pass"
+        app:layout_constraintTop_toTopOf="@+id/et_cnf_pass"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bootstrap_rounded_success"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/et_cnf_pass" />
+
+    <TextView
+        android:id="@+id/tv_login_pg"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5sp"
+        android:text="@string/already_registered_login"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regis" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
